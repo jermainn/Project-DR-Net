@@ -1,8 +1,8 @@
-## Two-Stage Framework for Distortion Estimation and Image Restoration in Underwater Imaging <img src="https://jsd.onmicrosoft.cn/gh/jermainn/cdn@master/project_pages/favicon/DR-Net_1.svg" alt="Method Icon" class="icon">
+## Two-Stage Framework for Distortion Estimation and Image Restoration in Underwater Imaging 
 
 [Project Page](https://jermainn.github.io/Project-Pages/DR-Net/)
 
-![download](https://img.shields.io/github/downloads/cszn/KAIR/total.svg)
+<!-- ![download](https://img.shields.io/github/downloads/cszn/KAIR/total.svg) -->
 
 [Jianming Liu](https://github.com/jermainn)<sup>1,2,3</sup>, Congzheng Wang<sup>1,2,3,\*</sup>, Chuncheng Feng<sup>1,2</sup>, Lei Liu<sup>1,2</sup>, Wanqi Gong<sup>1,2</sup>, Zhibo Chen<sup>1,2</sup>, Libin Liao<sup>1,2,3</sup>, Chang Feng<sup>1,2,3,\*</sup>
 
@@ -19,6 +19,8 @@ The project is comming soon. Thanks for your patience.:hugs:
 
 <!--  Image Comparison -->
 <!-- TODO：Add Slider -->
+
+{% raw %}
 <link rel="stylesheet" href="https://jsd.onmicrosoft.cn/gh/jermainn/cdn@master/project_pages/css/slider.css">
 <div class="comparison-container">
     <div class="image-container" id="slider1">
@@ -63,3 +65,4 @@ The project is comming soon. Thanks for your patience.:hugs:
 </div>
 <script src="https://jsd.onmicrosoft.cn/gh/jermainn/cdn@master/project_pages/js/slider.js"></script>
 <!--  Image Comparison end -->
+{% endraw %}
