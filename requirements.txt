@@ -1,0 +1,12 @@
+matplotlib==3.7.5
+MedPy==0.5.2
+ml_collections==0.1.1
+numpy==1.24.3
+opencv-python==4.10.0.84
+pillow==10.4.0
+torch==1.10.1
+torch-summary==1.4.5
+torchaudio==0.10.1
+torchmetrics==1.5.0
+torchvision==0.11.2
+tqdm==4.66.5

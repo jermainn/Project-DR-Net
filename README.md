@@ -15,5 +15,124 @@
 </p> -->
 
 
-The project is **comming soon**. Thanks for your patience. :hugs:
+The project is **comming**. Thanks for your patience. :hugs:
+
+### Visual Results
+
+[<img src="assets/n02676566_11957.png" height="224px"/>](https://jermainn.github.io/Project-Pages/DR-Net) [<img src="assets/n04259630_7754.png" height="224px"/>](https://jermainn.github.io/Project-Pages/DR-Net) [<img src="assets/n03065424_29337.png" height="224px"/>](https://jermainn.github.io/Project-Pages/DR-Net) 
+
+<img width="720" src="https://jermainn.github.io/Project-Pages/DR-Net/static/images/distortion_estimation.png">  
+
+
+
+### Contents
+
+- [Visual Results](#Visual Results) 
+- [Installation](#Installation)
+- [Training](#Training) 
+- [Testing](#Testing) 
+- [Results](#Results) 
+- [Citation](#Citation) 
+
+
+
+### Installation
+
+**clone this repo**
+
+```bash
+git clone https://github.com/XPixelGroup/DiffBIR.git
+cd DiffBIR
+```
+
+**create an environment** 
+
+```bash
+conda create -n drnet python=3.8
+conda activate drnet
+pip install -r requirements.txt
+```
+
+
+
+### Training
+
+You should modify the `train_options.py` file from [options](/options) first 
+
+#### Downloads
+
+- The underwater distortion image can be downloaded from [Datasets](https://cseweb.ucsd.edu/~viscomp/projects/WACV18Water/) based on ImageNet dataset, also you can download the set from our [Baidu Netdisk](https://pan.baidu.com/s/1Wn_Ark_ycpoD8MFuhPuvwg?pwd=jcyc) or [Google Drive](https://drive.google.com/drive/folders/15G36ZsbY9Xfah84Ga4VilAr7zJqIkf8X?usp=drive_link). The origional ImageNet set is from [ImageNet](http://www.image-net.org/).
+- TianDataset can be obtained in [SeeingThroughWater](https://www.cs.cmu.edu/~ILIM/projects/IM/water/research_water.html).
+- Other Datasets: [Baidu Netdisk](https://pan.baidu.com/s/1JjPVHtpNRGg7Jpo9Y2EA9A?pwd=9rhe) | Google Drive . 
+
+
+
+**Train the network**
+
+```bash
+python train.py --is_train  --dataroot ./data  --batch_size 8  --snapshot_dir ./experiments  --max_epochs 20
+```
+
+**Train DE-Net only** 
+
+```bash
+python train.py --is_train  --dataroot ./data  --batch_size 8  --snapshot_dir ./experiments  --ir_gan  --max_epochs 10
+```
+
+**Train IR-GAN only** 
+
+```bash
+python train.py --is_train  --dataroot ./data  --batch_size 8  --snapshot_dir ./experiments  --freeze_de_net  --max_epochs 10
+```
+
+
+
+### Testing
+
+You can modify the `test_options.py` file from [options](/options) 
+
+run `evaluate.py` file for distorted underwater image restoration [Datasets](https://cseweb.ucsd.edu/~viscomp/projects/WACV18Water/) or [Baidu Netdisk](https://pan.baidu.com/s/1Wn_Ark_ycpoD8MFuhPuvwg?pwd=jcyc) | [Google Drive](https://drive.google.com/drive/folders/15G36ZsbY9Xfah84Ga4VilAr7zJqIkf8X?usp=drive_link) .
+
+```bash
+python evaluate.py --dataroot ./data  --batch_size 8  --snapshot_dir ./experiments  --restore_from /pretrained_model/model.pth
+```
+
+then you can fine-tune the model by applying it to other datasets and reconstruct underwater degraded image
+
+
+
+### Results
+
+<details>
+<summary>comparisons on LiSet for underwater distorted image restoration</summary>
+<p align="center">
+  <img width="800" src="./assets/compare_liset_quantitation.png">
+</p>
+</details>
+
+<img width="800" src="https://jermainn.github.io/Project-Pages/DR-Net/static/images/compare_liset_v1.2.png">
+
+
+
+<details>
+<summary>comparison with the state-of-the-arts on synthetic and real captured datasets</summary>
+<p align="center">
+  <img width="800" src="./assets/compare_others_quantitation.png">
+</p>
+</details>
+
+<img width="800" src="https://jermainn.github.io/Project-Pages/DR-Net/static/images/compare_others_v1.3.png">
+
+
+
+### Citation
+
+Please cite us if our work is useful for your research.
+
+```
+@article{
+}
+```
+
+
 
