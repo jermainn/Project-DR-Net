@@ -27,7 +27,6 @@ The project is **comming**. Thanks for your patience. :hugs:
 
 ### Contents
 
-- [Visual Results](#Visual Results) 
 - [Installation](#Installation)
 - [Training](#Training) 
 - [Testing](#Testing) 
@@ -41,8 +40,8 @@ The project is **comming**. Thanks for your patience. :hugs:
 **clone this repo**
 
 ```bash
-git clone https://github.com/XPixelGroup/DiffBIR.git
-cd DiffBIR
+git clone https://github.com/jermainn/Project-DR-Net.git
+cd Project-DR-Net
 ```
 
 **create an environment** 
