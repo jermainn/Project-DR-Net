@@ -1,6 +1,6 @@
 ## Two-Stage Framework for Distortion Estimation and Image Restoration in Underwater Imaging
 
-[Project Page](https://jermainn.github.io/Project-Pages/DR-Net/)
+Paper | [Project Page](https://jermainn.github.io/Project-Pages/DR-Net/) 
 
 <!-- ![download](https://img.shields.io/github/downloads/cszn/KAIR/total.svg) -->
 
@@ -17,7 +17,7 @@
 
 The project is **comming**. Thanks for your patience. :hugs:
 
-### Visual Results
+<!-- ### Visual Results -->
 
 [<img src="assets/n02676566_11957.png" height="224px"/>](https://jermainn.github.io/Project-Pages/DR-Net) [<img src="assets/n04259630_7754.png" height="224px"/>](https://jermainn.github.io/Project-Pages/DR-Net) [<img src="assets/n03065424_29337.png" height="224px"/>](https://jermainn.github.io/Project-Pages/DR-Net) 
 
@@ -60,9 +60,10 @@ You should modify the `train_options.py` file from [options](/options) first
 
 #### Downloads
 
-- The underwater distortion image can be downloaded from [Datasets](https://cseweb.ucsd.edu/~viscomp/projects/WACV18Water/) based on ImageNet dataset, also you can download the set from our [Baidu Netdisk](https://pan.baidu.com/s/1Wn_Ark_ycpoD8MFuhPuvwg?pwd=jcyc) or [Google Drive](https://drive.google.com/drive/folders/15G36ZsbY9Xfah84Ga4VilAr7zJqIkf8X?usp=drive_link). The origional ImageNet set is from [ImageNet](http://www.image-net.org/).
+- The underwater distortion image can be downloaded from [Datasets](https://cseweb.ucsd.edu/~viscomp/projects/WACV18Water/) based on ImageNet dataset, also you can download the set from our [Baidu Netdisk](https://pan.baidu.com/s/1-u4jo6IeB1f2j0kJS2CZ_w?pwd=by34) or [Google Drive](https://drive.google.com/drive/folders/15G36ZsbY9Xfah84Ga4VilAr7zJqIkf8X?usp=sharing). The origional ImageNet set is from [ImageNet](http://www.image-net.org/).
+
 - TianDataset can be obtained in [SeeingThroughWater](https://www.cs.cmu.edu/~ILIM/projects/IM/water/research_water.html).
-- Other Datasets: [Baidu Netdisk](https://pan.baidu.com/s/1JjPVHtpNRGg7Jpo9Y2EA9A?pwd=9rhe) | Google Drive . 
+- Other Datasets: [Baidu Netdisk](https://pan.baidu.com/s/1JjPVHtpNRGg7Jpo9Y2EA9A?pwd=9rhe) | [Google Drive](https://drive.google.com/drive/folders/1TZg_GbTenDaRi3bjLIidWnaWA7XZ3nKf?usp=sharing) .
 
 
 
@@ -90,7 +91,7 @@ python train.py --is_train  --dataroot ./data  --batch_size 8  --snapshot_dir ./
 
 You can modify the `test_options.py` file from [options](/options) 
 
-run `evaluate.py` file for distorted underwater image restoration [Datasets](https://cseweb.ucsd.edu/~viscomp/projects/WACV18Water/) or [Baidu Netdisk](https://pan.baidu.com/s/1Wn_Ark_ycpoD8MFuhPuvwg?pwd=jcyc) | [Google Drive](https://drive.google.com/drive/folders/15G36ZsbY9Xfah84Ga4VilAr7zJqIkf8X?usp=drive_link) .
+Run `evaluate.py` file for distorted underwater image restoration [Datasets](https://cseweb.ucsd.edu/~viscomp/projects/WACV18Water/) or [Baidu Netdisk](https://pan.baidu.com/s/1Wn_Ark_ycpoD8MFuhPuvwg?pwd=jcyc) | [Google Drive](https://drive.google.com/drive/folders/15G36ZsbY9Xfah84Ga4VilAr7zJqIkf8X?usp=drive_link) . The trained model can be found in [Model](https://drive.google.com/file/d/1uQWhH7vxm1NETOhx8ckIxb197YQFDNMd/view?usp=sharing) .
 
 ```bash
 python evaluate.py --dataroot ./data  --batch_size 8  --snapshot_dir ./experiments  --restore_from /pretrained_model/model.pth

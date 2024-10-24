@@ -130,7 +130,7 @@ def main():
             image_batch = image_batch.cuda()
             target_batch = target_batch.cuda() 
 
-            # 预测结果
+            # predict
             pred, losses = model.optimize_parameters(image_batch, target_batch)
             _t['iter time'].toc(average=False)
             
