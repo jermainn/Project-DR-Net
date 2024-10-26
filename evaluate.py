@@ -89,7 +89,7 @@ def main():
             target_batch = target_batch.cuda()
             _, _, _, z = model(image_batch)
 
-            # save the output image
+            # save the output images
             for out, name in zip(z, names):
                 save_path = os.path.join(args.snapshot_dir, "results", os.path.dirname(name))
                 if not os.path.exists(save_path):

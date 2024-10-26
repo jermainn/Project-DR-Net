@@ -32,7 +32,6 @@ def tensor2im(in_image, imtype=np.uint8):
     :param imtype: 输出图片的数据类型
     :return:
     """
-
     if not isinstance(in_image, np.ndarray):
         if isinstance(in_image, torch.Tensor):
             image_tensor = in_image.data

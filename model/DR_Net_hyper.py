@@ -132,7 +132,6 @@ class Mlp(nn.Module):
         return x
 
     
-
 class Embeddings(nn.Module):
     """Construct the embeddings from patch, position embeddings.
     """

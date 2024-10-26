@@ -35,7 +35,6 @@ class TestOptions():
         # DE-Net
         parser.add_argument('--freeze-de-net', dest='freeze_de_net', default=False, help='dont train the de net')
         # IR-GAN
-        # parser.add_argument('--Z-adv', default=0, type=float, help='weight of adversarial loss after color net')
         parser.add_argument('--ir-gan', dest='ir_gan', default=True, help='do not include ir-gan in the model')
         # parser.add_argument()
 

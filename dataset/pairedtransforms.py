@@ -20,7 +20,6 @@ class ToTensor(object):
     Converts a pair of PIL Images or numpy.ndarray (H x W x C) in the range
     [0, 255] to torch.FloatTensor of shape (C x H x W) in the range [0.0, 1.0].
     """
-
     def __call__(self, pics):
         """
         Args:

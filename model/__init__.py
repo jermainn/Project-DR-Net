@@ -13,7 +13,7 @@ def CreateModel(args):
     model = DR_Net(config_vit, img_size=args.img_size, args=args)
     
     if args.restore_from is not None:
-        print(model.load_state_dict(torch.load(args.restore_from, map_location=lambda storage, loc: storage)))
+        model.load_state_dict(torch.load(args.restore_from, map_location=lambda storage, loc: storage))
     return model
 
 
