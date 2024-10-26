@@ -5,12 +5,12 @@ class TrainOptions():
     def initialize(self):
         parser = argparse.ArgumentParser(description="DR-Net Model")
         # basic parameters
-        parser.add_argument('--max_epochs', type=int, default=50, help='maximum epoch number to train')
+        parser.add_argument('--max_epochs', type=int, default=20, help='maximum epoch number to train')
         parser.add_argument('--beta1', type=float, default=0.5, help='momentum term of adam')
         parser.add_argument('--lr', type=float, default=0.0002, help='initial learning rate for adam')
-        parser.add_argument('--is-train', default=True, type=bool, help='Training')
+        parser.add_argument('--is-train', default=True, type=bool, action='store_true', help='Training')
         parser.add_argument('--batch_size', type=int, default=8, help='batch_size per gpu')
-        parser.add_argument('--num-workers', default=8, type=int, help='number of data loading workers (default: 4)')
+        parser.add_argument('--num-workers', default=8, type=int, help='number of data loading workers (default: 8)')
         parser.add_argument('--snapshot-dir', type=str, default='./experiments/', help='where to save models')
         parser.add_argument('--restore-from', type=str, default=r"./pretrained_model/train_model.pth", help='where to restore models from')
         # dataset parameters
@@ -36,7 +36,7 @@ class TrainOptions():
         parser.add_argument('--ir-gan-cbam-skip', type=bool, default=True, help='use cbam_skip in net')
         parser.add_argument('--dim', default=32, type=int, help='initial feature dimension (doubled at each downsampling layer)')
         # DE-Net
-        parser.add_argument('--freeze-de-net', dest='freeze_de_net', default=False, help='dont train the de net')
+        parser.add_argument('--freeze-de-net', dest='freeze_de_net', default=False, action='store_true', help='dont train the de net')
         parser.add_argument('--L-con', default=1.0, type=float, help='weight of L1 reconstruction loss after color net')
         parser.add_argument('--L-per', default=1, type=float, help='weight of perceptual loss after color net, 0.3')
         # parser.add_argument('--L-adv', default=0, type=float, help='weight of adversarial loss after color net 0.005')
@@ -47,7 +47,7 @@ class TrainOptions():
         parser.add_argument('--Z-per', default=1, type=float, help='weight of perceptual loss after color net')
         parser.add_argument('--Z-adv', default=0., type=float, help='weight of adversarial loss after color net')
         # parser.add_argument('--Z-adv', default=0, type=float, help='weight of adversarial loss after color net')
-        parser.add_argument('--ir-gan', dest='ir_gan', default=True, help='do not include ir-gan in the model')
+        parser.add_argument('--ir-gan', dest='ir_gan', default=True, action='store_false', help='do not include ir-gan in the model')
         # parser.add_argument()
 
         return parser.parse_args()

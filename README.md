@@ -56,7 +56,7 @@ pip install -r requirements.txt
 
 ### Training
 
-You should modify the `train_options.py` file from [options](/options) first 
+You should modify the `train_options.py` file from [options](/options) first. 
 
 #### Downloads
 
@@ -109,7 +109,6 @@ then you can fine-tune the model by applying it to other datasets and reconstruc
   <img width="800" src="./assets/compare_liset_quantitation.png">
 </p>
 </details>
-
 <img width="800" src="https://jermainn.github.io/Project-Pages/DR-Net/static/images/compare_liset_v1.2.png">
 
 
@@ -120,7 +119,6 @@ then you can fine-tune the model by applying it to other datasets and reconstruc
   <img width="800" src="./assets/compare_others_quantitation.png">
 </p>
 </details>
-
 <img width="800" src="https://jermainn.github.io/Project-Pages/DR-Net/static/images/compare_others_v1.3.png">
 
 

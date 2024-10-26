@@ -102,11 +102,6 @@ def main():
     # dataloader and model
     train_loader, _, _ = create_dataloader(args)
     model = CreateModel(args)
-    # print(model)
-    # exit()
-    from torchsummary import summary
-    summary(model, input_data=(3, 224, 224))
-    # exit()
     # cudnn
     cudnn.enabled = True
     cudnn.benchmark = True
