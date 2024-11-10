@@ -1,4 +1,4 @@
-## Two-Stage Framework for Distortion Estimation and Image Restoration in Underwater Imaging <img width="26" vertical-align="bottom" src="https://jsd.onmicrosoft.cn/gh/jermainn/cdn@master/project_pages/favicon/DR-Net_1.png">
+## Learning to Estimate Distortion Information and Restore Underwater Image with a Two-Stage Framework <img width="26" vertical-align="bottom" src="https://jsd.onmicrosoft.cn/gh/jermainn/cdn@master/project_pages/favicon/DR-Net_1.png">
 
 ### Paper | [Project Page](https://jermainn.github.io/Project-Pages/DR-Net/) 
 
